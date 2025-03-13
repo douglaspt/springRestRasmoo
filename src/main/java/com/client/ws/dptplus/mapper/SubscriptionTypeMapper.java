@@ -1,7 +1,7 @@
 package com.client.ws.dptplus.mapper;
 
 import com.client.ws.dptplus.dto.SubscriptionTypeDto;
-import com.client.ws.dptplus.model.SubscriptionType;
+import com.client.ws.dptplus.model.jpa.SubscriptionType;
 
 public class SubscriptionTypeMapper {
 

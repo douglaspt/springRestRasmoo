@@ -1,11 +1,6 @@
 package com.client.ws.dptplus.dto;
 
-import com.client.ws.dptplus.model.SubscriptionType;
-import com.client.ws.dptplus.model.UserType;
-import jakarta.persistence.Column;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import com.client.ws.dptplus.model.jpa.User;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -48,4 +43,5 @@ public class UserDto {
     private Long userTypeId;
 
     private Long subscriptionTypeId;
+
 }

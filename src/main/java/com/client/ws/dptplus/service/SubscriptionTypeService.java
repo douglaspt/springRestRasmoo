@@ -1,7 +1,7 @@
 package com.client.ws.dptplus.service;
 
 import com.client.ws.dptplus.dto.SubscriptionTypeDto;
-import com.client.ws.dptplus.model.SubscriptionType;
+import com.client.ws.dptplus.model.jpa.SubscriptionType;
 
 import java.util.List;
 

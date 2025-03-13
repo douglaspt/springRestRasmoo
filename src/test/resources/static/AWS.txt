@@ -1,0 +1,2 @@
+# Acessar a conta AWS
+- Primeiro serviço que vamos utilizar será o IAM.

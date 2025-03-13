@@ -1,4 +1,4 @@
-package com.client.ws.dptplus.model;
+package com.client.ws.dptplus.model.jpa;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class UserPaymentInfo implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_payment_info_id")
     private Long id;
 
@@ -34,7 +34,7 @@ public class UserPaymentInfo implements Serializable {
 
     private BigDecimal price;
 
-    private Long instalments;
+    private Long installments;
 
     @Column(name = "dt_payment")
     private LocalDate dtpayment;

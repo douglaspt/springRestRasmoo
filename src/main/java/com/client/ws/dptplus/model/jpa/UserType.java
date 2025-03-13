@@ -1,12 +1,11 @@
-package com.client.ws.dptplus.model;
+package com.client.ws.dptplus.model.jpa;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
+import org.springframework.security.core.GrantedAuthority;
 
 @Data
 @NoArgsConstructor
@@ -14,10 +13,10 @@ import java.io.Serializable;
 @Builder
 @Entity
 @Table(name = "user_type")
-public class UserType implements Serializable {
+public class UserType implements GrantedAuthority {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_type_id")
     private Long id;
 
@@ -25,4 +24,8 @@ public class UserType implements Serializable {
 
     private String description;
 
+    @Override
+    public String getAuthority() {
+        return name;
+    }
 }

@@ -1,9 +1,9 @@
 package com.client.ws.dptplus.mapper;
 
 import com.client.ws.dptplus.dto.UserDto;
-import com.client.ws.dptplus.model.SubscriptionType;
-import com.client.ws.dptplus.model.User;
-import com.client.ws.dptplus.model.UserType;
+import com.client.ws.dptplus.model.jpa.SubscriptionType;
+import com.client.ws.dptplus.model.jpa.User;
+import com.client.ws.dptplus.model.jpa.UserType;
 
 public class UserMapper {
 

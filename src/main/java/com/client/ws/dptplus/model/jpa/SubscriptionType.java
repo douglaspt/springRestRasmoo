@@ -1,4 +1,4 @@
-package com.client.ws.dptplus.model;
+package com.client.ws.dptplus.model.jpa;
 
 import jakarta.persistence.*;
 import lombok.*;
